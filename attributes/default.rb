@@ -18,7 +18,13 @@
 # limitations under the License.
 #
 
+default['php']['pcre']['backtrack_limit'] = 10000000
+default['php']['register_globals'] = 'On' 
+default['php']['memory_limit'] = '128M'
+
+
 lib_dir = 'lib'
+
 default['php']['install_method'] = 'package'
 default['php']['directives'] = {}
 default['php']['bin'] = 'php'
